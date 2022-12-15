@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+font-size: 20px;
+}
+img{
+  heigth: 5px;
+  width: 5px;
+}
+</style>
+<title>Nederland</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">sluiten &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Hoofdmenu</a>
+  <a href="index2.html" class="w3-bar-item w3-button">Holland</a>
+  <a href="index3.html" class="w3-bar-item w3-button">Eten</a>
+  <a href="index4.html" class="w3-bar-item w3-button">Eten en Drinken</a>
+  <a href="weer.html" class="w3-bar-item w3-button">Weer</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Eten en Drinken</h1>
+  </div>
+</div>
+
+<img src="kaas.jpg" alt="Toch geen Foto" style="width:100%">
+
+<div class="w3-container">
+
+<p>Eten en Drinken </p>
+<p>Nederland kent enkele typisch Nederlandse gerechten. Pot van aardappelen, vlees en groenten staat in het buitenland ook wel bekend als een gezonde basisregel van een gezond eetpatroon, al zijn buitenlanders vaak ontevreden over de smaak. Ook typisch Hollands is de "Hollandse Nieuwe", de eerste haring van het seizoen, gepekeld en geserveerd met uien. Rauw gegeten, schoongemaakt en heel gezond. Jaarlijks worden in de haven van Scheveningen de eerste vaten Hollandse Nieuwe geveild. Dan is er de kibbeling, gefrituurde witte vis, soms geserveerd met knoflook of mayonaise. Nederland eet ook veel soorten stamppot, zoals hutspot, een stamppot van aardappel, ui en wortel met spek en rookworst. Nederland staat ook bekend om zijn verscheidenheid aan kazen, zoals Gouda en Edam. Andere voedingsmiddelen die als typisch Nederlands voedsel worden beschouwd, zijn oliebol, kroketten, stroopwafel en poffertjes.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/03iKNFPBK1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>

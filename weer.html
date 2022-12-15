@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+font-size: 20px;
+}
+img{
+  heigth: 5px;
+  width: 5px;
+}
+</style>
+<title>Nederland</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">sluiten &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Hoofdmenu</a>
+  <a href="index2.html" class="w3-bar-item w3-button">Holland</a>
+  <a href="index3.html" class="w3-bar-item w3-button">Eten</a>
+  <a href="index4.html" class="w3-bar-item w3-button">Eten en Drinken</a>
+  <a href="weer.html" class="w3-bar-item w3-button">Weer</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Weer</h1>
+  </div>
+</div>
+
+<img src="wolken.jpg" alt="Toch geen Foto" style="width:100%">
+
+<div class="w3-container">
+
+<p>Klimaat</p>
+<p>Nederland heeft een gematigd zeeklimaat (volgens het systeem van Köppen, dat geldt voor verschillende klimaattypes), wat betekent milde winters, koele zomers en het hele jaar door neerslag. De gemiddelde temperatuur in de zomer ligt rond de 18°C. Het oosten van Brabant en het uiterste noorden van Limburg zijn gemiddeld genomen het warmst in de zomer. De warmste en koudste maanden zijn juli en januari. Limburg is de droogste provincie van Nederland. Neerslag in Nederland in de vorm van sneeuw, hagel, regen en ijzel. De gemiddelde jaarlijkse neerslag is ongeveer 780 mm. Op 8 maart 2013 beleefde De Bilt een recordregenval. Het regende gedurende alle 24 uur dat de metingen werden uitgevoerd. Bij De Bilt wordt elke tien minuten gemeten. Per meetperiode is minimaal 0,1 mm neerslag gemeten. De warmste temperatuur ooit gemeten in Nederland was 38,6 °C en de koudste temperatuur ooit gemeten in Nederland was -27,8 °C.</p>
+
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+<TABLE BORDER="1">
+<TR>
+<TD WIDTH="120" HEIGHT="60">Tijd</TD>
+<TD WIDTH="80">Temp</TD>
+</TR>
+<TR>
+<TD HEIGHT="40">20:00</TD>
+<TD>4°C</TD>
+</TR>
+<TR>
+<TD WIDTH="120" HEIGHT="60">21:00</TD>
+<TD WIDTH="80">1°C</TD>
+</TR>
+<TR>
+<TD HEIGHT="40">22:00</TD>
+<TD>-2°C</TD>
+</TR>
+<TR>
+<TD WIDTH="120" HEIGHT="60">23:00</TD>
+<TD WIDTH="80">-3°C</TD>
+</TR>
+<TR>
+<TD HEIGHT="40">00:00</TD>
+<TD>-5°C</TD>
+</TR>
+<TR>
+<TD WIDTH="120" HEIGHT="60">01:00</TD>
+<TD WIDTH="80">-5°C</TD>
+</TR>
+<TR>
+<TD HEIGHT="40">02:00</TD>
+<TD>-7°C</TD>
+</TR>
+</TABLE>
+
+</body>
+</html>

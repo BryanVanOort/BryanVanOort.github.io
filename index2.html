@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+font-size: 20px;
+}
+img{
+  heigth: 5px;
+  width: 5px;
+}
+</style>
+<title>Nederland</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">sluiten &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Hoofdmenu</a>
+  <a href="index2.html" class="w3-bar-item w3-button">Geschiedenis</a>
+  <a href="index3.html" class="w3-bar-item w3-button">Dieren</a>
+  <a href="index4.html" class="w3-bar-item w3-button">Eten en Drinken</a>
+  <a href="weer.html" class="w3-bar-item w3-button">Weer</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Geschiedenis</h1>
+  </div>
+</div>
+
+<img src="mannen.jpg" alt="Toch geen Foto" style="width:100%">
+
+<div class="w3-container">
+
+<p>Het Romeinse rijk</p>
+<p> 57 v.Chr. De Romeinen veroverden Zuid-Nederland en in 50 na Christus maakten de Romeinen de Rijn tot de grens tussen hun rijk en Noord-Nederland. De noordelijke gewesten werden toen bestuurd door de machtige Friezen. De Romeinen konden het niet veroveren, want de Friezen, Cananefaten, Tubanten en Bataven waren allemaal dappere strijders. De Romeinen bezaten 3 grote steden in Nederland: Noviomagus (Nijmegen), Mosae Trajectum (Maastricht) en Forum Hadriaum (Voorburg, nabij Den Haag).</p>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
